@@ -52,10 +52,10 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot. I will use my Galick Gun and protect your group. You can find my list of available commands with /help.
+I am an PANDA themed group management bot. I will use my Cuteness to protect your group. You can find my list of available commands with /help.
 """
 
-HELP_STRINGS = """★彡 𝓘 𝓪𝓶 𝓥𝓮𝓖𝓮𝓣𝓪 (𝓪𝓴𝓪) 𝓤𝓻 𝓢𝓾𝓹𝓮𝓻 𝓢𝓪𝓲𝔂𝓪𝓷 彡★!!!  
+HELP_STRINGS = """★彡 I am PANDA 🐼 彡★!!!  
 I Use My Powers To Help Admins To Manage Their Groups! 
 *Main* commands available :
  • /help: PM's you this message.
@@ -63,12 +63,12 @@ I Use My Powers To Help Admins To Manage Their Groups!
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-For all command use / [or](https://telegra.ph/file/9296a03c061cb346efdb6.jpg) !
+For all command use / [or](https://telegra.ph/file/93e465828a1695b8c8b1f.jpg) !
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-TOKISAKI_IMG = "https://telegra.ph/file/273496a28bd1b9fc26b96.jpg"
+TOKISAKI_IMG = "https://telegra.ph/file/9863361390f15d1e5b5cd.jpg"
 KURUMI_IMG = "https://telegra.ph/file/1bcec7b7230ea39ad9166.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!\n
@@ -190,7 +190,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add VeGeTa RoBoT to your group",
+                            text="☑️ Add PANDA to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -204,7 +204,7 @@ def start(update: Update, context: CallbackContext):
                     ], 
                      [
                          InlineKeyboardButton(
-                             text="🔔 Updates of veGeTa 🔔",
+                             text="🔔 Updates of PANDA 🔔",
                              url="https://t.me/VeGeTa_support")
                     ], 
                      [
